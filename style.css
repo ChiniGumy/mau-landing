@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    color: #353535;
+}
+
+p {
+    color: #424548;
+    line-height: 30px;
+    font-size: 19px;
+}
+
+li a {
+    font-size: 18px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
+}
+
+.fade-body {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    padding: 32px;
+    font-family: 'Inconsolata', monospace;
+    height: 100vh;
+    background-color: #fafafa;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    background-color: #fafafa;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.header-content {
+    display: flex;
+    position: fixed;
+}
+
+.header span {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #6b6e71;
+}
+
+.header .navbar ul {
+    margin-top: 24px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.header .navbar ul li {
+    cursor: pointer;
+    text-decoration: none;
+    color: #686664;
+    transition: all 250ms;
+}
+
+.header .navbar ul li:hover {
+    background-color: #efefee;
+}
+
+.header .navbar ul li {
+    margin-bottom: 10px;
+}
+
+.division-line {
+    margin: 0 25px;
+    border: 1px solid #e3d9d9;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#about-me a {
+    border: 1px solid #353535;
+    color: #424548;
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+#about-me p {
+    width: 120ch;
+}
+
+#about-me img {
+    margin-bottom: 8px;
+    margin-top: 18px;
+    width: 300px;
+}
+
+.skills-imgs {
+    margin-top: 24px;
+}
+
+.skills-imgs img {
+    margin-right: 12px;
+    height: 50px;
+}
+
+.education-imgs {
+    margin-top: 24px;
+}
+
+.education-imgs img {
+    margin-right: 16px;
+    height: 50px;
+}
+
+#laboral-experience, #about-me, #skills, #courses, #education  {
+    padding-left: 25px;
+}
+
+#laboral-experience h2, #about-me h2 , #skills h2, #courses h2, #education h2 {
+    margin-top: 8px;
+}
+
+#laboral-experience p, #about-me p , #skills p, #courses p, #education p {
+    width: 85%;
+}
+
+#laboral-experience .images-container {
+    margin-top:12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#laboral-experience img {
+    width: 500px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+#laboral-experience div:last-child {
+    margin-bottom: 64px;
+}
+
+#contact form  {
+    margin-top: 18px;
+}
+
+
+#contact form input {
+    margin-top: 4px;
+    padding: 4px;
+    border: 1px solid #9ea5ab;
+}
+
+#contact form textarea {
+    margin-top: 4px;
+    padding: 4px;
+    border: 1px solid #9ea5ab;
+    resize: none;
+}
+
+#contact form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+#contact form input:focus {
+    outline: none;
+}
+
+#contact form textarea:focus {
+    outline: none;
+}
+
+#contact button {
+    font-family: 'r';
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid #9ea5ab;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: all 200ms;
+    font-family: 'Inconsolata', monospace;
+}
+
+#contact button:hover {
+    background-color: #e8e8e8;
+}
